@@ -1,0 +1,93 @@
+ <div id="header">
+            <img src="/images/principal.jpg" />
+        </div>
+
+        <p>Registro-se pela rede social ou pelo formulário abaixo</p>
+
+        <div id="btnCadastros">
+            <img src="/images/face.png" />
+            <img src="/images/googlePlus.png" />
+            <input type="button" class="cadastrar" value="Já possui cadastro?" onclick="location.href='authIndex';"/>
+        </div>
+
+        <div style="clear:both;"></div>
+
+        <% if @errorMessage != nil then %>
+
+        <div id="erro">
+                <div id="msg">
+                    <%= @errorMessage  %>
+                </div>
+            </div>
+
+        <% end %>
+
+<form action="new" method="POST">
+
+        <ul class="form">
+            <li>
+                <span>E-mail</span>
+            </li>
+            <li>
+                <input type="text" id="email" name="email" />
+            </li>
+            <li>
+                <span>Nome Completo</span>
+            </li>
+            <li>
+                <input type="text" id="nome" name="nome" />
+            <li>
+                <span>Faixa Etária</span>
+            </li>
+            <li>
+                <select id="faixaEtarea" name="faixaEtarea">
+                    <option value="">Selecione</option>
+                    <option value="1">18-24</option>
+                    <option value="2">25-30</option>
+                    <option value="3">31-40</option>
+                    <option value="4">41-50</option>
+                    <option value="5">51-60</option>
+                    <option value="6">acima de 60</option>
+                </select>
+            </li>
+
+            <li>
+                <span>Sexo</span>
+            </li>
+            <li>
+                <input type="radio" id="sexoM" name="sexo" value="m"/>Masculino
+                <input type="radio" id="sexoF" name="sexo" value="f"/>Feminino
+            </li>
+
+            <li>
+                <span>Senha</span>
+            </li>
+            <li>
+                <input type="password" id="senha" name="senha" />
+            </li>
+
+            <li>
+                <span>Confirmar Senha</span>
+            </li>
+            <li>
+                <input type="password" id="confirmSenha" name="confirmSenha" />
+            </li>
+            <li>&nbsp;</li>
+
+            <li>
+                <input type="checkbox" name="promocao" />
+                <span class="p"> Aceito receber promoções e ofertas da</span>
+            </li>
+            <li>
+                <span style="margin:0;font-weight:normal;">Gardens e de seus parceiros.</span>
+            </li>
+            <!--<li>
+                <input type="checkbox" name="termos" />
+                <span class="p"> Li e concordo com os termos de uso. </span>
+            </li>-->
+            <li>&nbsp;</li>
+            <li>
+                <input type="submit" class="red" value="Cadastrar" onclick="return validaCadastro()" />
+            </li>
+        </ul>
+</form>

@@ -1,0 +1,193 @@
+﻿body {
+    margin-left:0px;
+    margin-right:0px;
+    font-family:"Open Sans", sans-serif;
+    letter-spacing:-0.5px;
+}
+img {
+    max-width: 100%;
+    float:left;
+}
+ul{margin:0;}
+
+input[type=text],input[type=password],select{
+    border:solid 2px grey;
+    font-size:1em;
+    width:90%;
+    padding: 0 20px 0 20px;
+}
+
+select{
+    width:95%;
+     -webkit-appearance: none;
+}
+
+input[type=button],input[type=submit]{
+    border:solid 2px grey;
+    font-size:1em;
+    padding: 0 20px 0 20px;
+}
+
+#header img {width:100%;margin-bottom:50px;}
+#btnCadastros{width:70%;margin:auto;}
+
+.cadastrar{
+    margin-top:5px;
+    color:#86add8;
+    background-color:white;
+}
+
+#container {padding-bottom:40px;}
+#container p{width:100%;text-align:center;}
+
+.form{
+    list-style:none;
+    font-size:1.5em;
+    font-weight:bold;
+    }
+.form span{margin-top:20px;display:inline-block}
+.form input[type=button],input[type=submit]{width:95%;}
+
+.red {background-color:red;color:white;}
+
+
+#contrato{list-style:none}
+
+
+#downBackground{
+    background:url('/images/linhadn.png');
+    width:90%;
+    height:78px;
+    margin:auto;
+}
+
+ #downLeft{
+     background:url('/images/fiodnLeft.png');
+     height:78px;
+     width:40px;
+     position:relative;
+     float:left;
+ }
+
+ #downRight{
+     background:url('/images/fiodnRight.png');
+     height:78px;
+     width:40px;
+     position:relative;
+     float:right;
+ }
+
+
+
+#upBackground{
+    background:url('/images/linhaup.png');
+    width:90%;
+    height:27px;
+    margin:auto;
+}
+
+ #upLeft{
+     background:url('/images/fioupLeft.png');
+     height:27px;
+     width:35px;
+     position:relative;
+     float:left;
+ }
+
+ #upRight{
+     background:url('/images/fioupRight.png');
+     height:27px;
+     width:35px;
+     position:relative;
+     float:right;
+ }
+
+#erro {
+    width:100%;
+    float:left;
+    text-align:center;
+    margin-bottom:30px;
+}
+
+#erro #msg {
+    width:90%;
+    margin:auto;
+    background-color:#FCD4D1;
+    padding:20px;
+}
+
+/*===========================================================================*/
+
+@media screen and (max-width: 1023px) {
+
+    body{font-size:2em;}
+
+    input[type=text],input[type=password],select {height:110px;border-radius:30px;}
+    input[type=button],input[type=submit] {height:110px;border-radius:30px;}
+    input[type=radio]{height:60px;width:60px;}
+    input[type=checkbox]{height:60px;width:60px;}
+
+    select {background: url('/images/arrowDownG.png') no-repeat right #fff;}
+
+    h2{font-size:1.6em;text-align:center;padding: 0 20px 0 20px;}
+
+    #header {width:100%;}
+    .p{font-weight:normal;}
+
+    .pp{font-weight:normal;font-size:0.6em;display:flex;}
+    .pp .clausula{margin: 0 40px 0 30px;}
+
+     #downMid{
+         background:url('/images/wifi.png');
+         margin-left:-120px;
+         height:78px;
+         width:181px;
+         position:relative;
+         float:left;
+         left:50%;
+    }
+
+     #erro #msg {font-size:1.2em;}
+}
+
+/*===========================================================================*/
+
+@media screen and (min-width: 1024px) {
+
+    body{font-size:1em;}
+    #header {width:640px;}
+
+    input[type=text],input[type=password],select {height:50px;border-radius:15px;}
+    input[type=button],input[type=submit] {height:50px;border-radius:15px;}
+    input[type=radio]{height:30px;width:30px;}
+    input[type=checkbox]{height:30px;width:30px;}
+    select {background: url('/images/arrowDownP.png') no-repeat right #fff;}
+
+    h2{font-size:2em;text-align:center;}
+
+    #container {
+    width:640px;
+    margin:auto;
+    }
+
+    #btnCadastros img{height:60px;}
+    .p{font-weight:normal;}
+
+    .pp{font-weight:normal;font-size:0.8em;display:flex;}
+    .pp .clausula{margin-left:15px;}
+
+     #downMid{
+         background:url('/images/wifip.png');
+         margin-left:-80px;
+         height:39px;
+         width:91px;
+         position:relative;
+         float:left;
+         left:50%;
+         margin-top:20px;
+     }
+
+    #erro #msg {font-size:1.5em;}
+}
+
+

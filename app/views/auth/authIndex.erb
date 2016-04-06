@@ -1,0 +1,48 @@
+<div id="header">
+            <img src="/images/principal.jpg" />
+        </div>
+
+        <% if @errorMessage != nil %>
+
+            <div id="erro">
+                <div id="msg">
+                    <%= @errorMessage %>
+                </div>
+            </div>
+
+        <% end %>
+
+        <p>Informe os dados de login ou use a sua rede social</p>
+
+        <div id="btnCadastros">
+            <img src="/images/face.png" />
+            <img src="/images/googlePlus.png" />
+            <input type="button" class="cadastrar" value="Ainda não é cadastrado?" onclick="location.href='register'"/>
+        </div>
+
+        <div style="clear:both;"></div>
+
+<form method="POST"  action="login" >
+
+        <ul class="form" >
+            <li>
+                <span>E-mail</span>
+            </li>
+            <li>
+                <input type="text" id="email" name="email" />
+            </li>
+            <li>
+                <span>Senha</span>
+            </li>
+            <li>
+                <input type="password" id="senha" name="senha" />
+            </li>
+            <li>
+                &nbsp;
+            </li>
+            <li>
+                <input type="submit" class="red" value="Entrar" onclick="return validalogin()" />
+            </li>
+        </ul>
+
+</form>
