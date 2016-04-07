@@ -38,7 +38,9 @@ test:
 
 production:
   <<: *default
-  database: authAppSPTrans
+  host: ec2-54-227-245-197.compute-1.amazonaws.com
+  database: d35lh88fjimc3f
+  username: yrbitrdevgffii
   password: 96aTDi25X
 
 #default: &default
